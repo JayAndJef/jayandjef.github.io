@@ -1,0 +1,56 @@
+---
+layout: default
+title: Home
+---
+
+<div class="message" style="font-size: 0.9em">
+  Welcome to my site! This is under development and will mostly be posts about me and my thoughts, especially programming.
+  <br />
+  See my portfolio <a href="/portfolio">here</a>, and my about page <a href="/about">here</a>. Thanks!
+</div>
+
+<div>
+  Planned Posts:
+  {% for post in site.data.planned_posts %}
+  <li>
+    <b>{{ post.title }}</b>: 
+    {{ post.description }}
+  </li>
+  {% endfor %}
+</div>
+
+<br \>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <hr \>
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content | truncatewords: 30 }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

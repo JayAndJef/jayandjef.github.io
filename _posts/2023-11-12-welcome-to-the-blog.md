@@ -8,9 +8,9 @@ categories: update
 This is a **WIP** blog, hopefully there will be more content in the near future!
 
 Built using:
-- ~~[NextJS](https://nextjs.org/)~~
-- ~~[Tailwind](https://tailwindcss.com/)~~
-- ~~[Typescript](https://www.typescriptlang.org/)~~
+- ~~NextJs~~
+- ~~Tailwind~~
+- ~~Tyepscript~~
 - Jekyll and Github Pages, Woohoo!
 
 My old prototype blog can be found [here](https://blog-jayandjef.vercel.app/)

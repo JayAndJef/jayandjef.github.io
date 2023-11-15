@@ -11,12 +11,14 @@ title: Home
 
 <div>
   Planned Posts:
+  <ul>
   {% for post in site.data.planned_posts %}
   <li>
     <b>{{ post.title }}</b>: 
     {{ post.description }}
   </li>
   {% endfor %}
+  </ul>
 </div>
 
 <br \>

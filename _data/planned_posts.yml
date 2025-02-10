@@ -1,5 +1,2 @@
-- title: Advent of Code 2023
-  description: Follow along with AoC 2023, with a walkthrough of my approach to solving each problem.
-
-- title: New Year's Post
-  description: Surprise project related to the new year?
+- title: Implementing a allocator in Rust for my kernel
+  description: Pretty self explanatory.

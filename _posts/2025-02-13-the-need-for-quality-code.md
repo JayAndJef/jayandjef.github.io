@@ -5,6 +5,8 @@ date: 2025-02-13 8:20:00 -0800
 categories: programming
 ---
 
+TL;DR: Code quality and scalability is extremely important
+
 I've noticed that some younger developers don't write what most people would consider "clean" code. And it's not only due to inexperience as well.
 
 This post was inspired by one of my latest endeavors, which was to migrate a web application initially developed by some students for my own needs.

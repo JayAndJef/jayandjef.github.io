@@ -1,0 +1,13 @@
+{% assign featured_posts = site.posts | where_exp: "post", "post.tags contains 'featured'" %}
+{% if featured_posts.size > 0 %}
+<div class="featured-posts">
+  <h4>Featured Posts</h4>
+  <ul class="featured-posts-list">
+    {% for post in featured_posts %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

@@ -1,7 +1,7 @@
 # Setup
 title:               Jayden Qi's Blog
 tagline:             ''
-description:         'A soon-to-be blog about my musings, thoughts, and code'
+description:         'A blog about my musings, projects, and code'
 baseurl:             ''
 paginate:            5
 permalink:           pretty

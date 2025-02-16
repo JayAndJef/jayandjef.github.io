@@ -1,4 +1,4 @@
-{% assign featured_posts = site.posts | where_exp: "post", "post.tags contains 'featured'" %}
+{% assign featured_posts = site.posts | where_exp: "post", "post.categories contains 'featured'" %}
 {% if featured_posts.size > 0 %}
 <div class="featured-posts">
   <h4>Featured Posts</h4>

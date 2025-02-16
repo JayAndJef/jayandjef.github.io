@@ -2,7 +2,7 @@
 layout: post
 title: An interview with Richard Stallman
 date: 2025-02-15 2:00:00 -0800
-categories: programming special
+categories: programming featured
 ---
 
 This post will contain a few excerpts from an interview with RMS conducted by me and my friend last year.

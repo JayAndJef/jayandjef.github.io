@@ -1,0 +1,39 @@
+---
+layout: page
+title: Featured Posts
+---
+
+<div class="featured-posts-page">
+    <p class="featured-intro">The ultra-special posts for ultra-special people.</p>
+
+    {% assign featured_posts = site.posts | where_exp: "post", "post.categories contains 'featured'" %}
+    {% if featured_posts.size > 0 %}
+        <div class="posts">
+            {% for post in featured_posts %}
+            <hr />
+            <div class="post">
+                <h1 class="post-title">
+                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                </h1>
+                <span class="post-date">{{ post.date | date_to_string }}</span>
+                {{ post.content | truncatewords: 30 }}
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="no-posts">No featured posts yet.</p>
+    {% endif %}
+</div>
+
+<style>
+.featured-intro {
+    margin-bottom: 2rem;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.no-posts {
+    color: #666;
+    font-style: italic;
+}
+</style>

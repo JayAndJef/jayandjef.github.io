@@ -3,13 +3,14 @@ title:               Jayden Qi's Blog
 tagline:             ''
 description:         'A blog about my musings, projects, and code'
 baseurl:             ''
-paginate:            5
+paginate:            3
 permalink:           pretty
 
 # About/contact
 author:
   name:              Jayden Q
   email:             jaydeniqv2@gmail.com
+  discord:           jayandjeff
 
 # Gems
 plugins:

@@ -16,9 +16,9 @@ title: Home
   <li>
     <b>{{ post.title }}</b>: 
     {{ post.description }}
-    {% if post.note %}
+    {% if post.note != null and post.note != "" %}
     <br><i>Note: {{ post.note }}</i>
-    {% if post.issue_link %}
+    {% if post.issue_link != null and post.issue_link != "" %}
     (<a href="{{ post.issue_link }}">Issue</a>)
     {% endif %}
     {% endif %}

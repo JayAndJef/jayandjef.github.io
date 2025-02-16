@@ -3,6 +3,7 @@ title:               Jayden Qi's Blog
 tagline:             ''
 description:         'A blog about my musings, projects, and code'
 baseurl:             ''
+url:                 'https://jayandjef.github.io'
 paginate:            3
 permalink:           pretty
 
@@ -15,6 +16,7 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Custom vars
 version:             1.1.0

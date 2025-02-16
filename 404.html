@@ -22,4 +22,20 @@ layout: default
 
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
+  <p>Redirecting to home page in <span id="countdown">5</span> seconds...</p>
 </div>
+
+<script>
+  let timeLeft = 5;
+  const countdownElement = document.getElementById('countdown');
+  
+  const countdownTimer = setInterval(() => {
+    timeLeft--;
+    countdownElement.textContent = timeLeft;
+    
+    if (timeLeft <= 0) {
+      clearInterval(countdownTimer);
+      window.location.href = '/';
+    }
+  }, 1000);
+</script>

@@ -16,6 +16,12 @@ title: Home
   <li>
     <b>{{ post.title }}</b>: 
     {{ post.description }}
+    {% if post.note %}
+    <br><i>Note: {{ post.note }}</i>
+    {% if post.issue_link %}
+    (<a href="{{ post.issue_link }}">Issue</a>)
+    {% endif %}
+    {% endif %}
   </li>
   {% endfor %}
   </ul>

@@ -1,2 +1,4 @@
 - title: Implementing a allocator in Rust for my kernel
   description: Pretty self explanatory.
+  note: Delayed due to cargo internal bug
+  issue_link: https://github.com/rust-lang/cargo/issues/10444

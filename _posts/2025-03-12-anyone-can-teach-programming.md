@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Anyone can teach programming
-date: 2025-3-12 22:00:00 -0800
+date: 2025-03-12 21:00:00 -0800
 categories: programming life
 ---
 

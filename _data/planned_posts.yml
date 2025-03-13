@@ -3,9 +3,6 @@
   note: will start writing after (hopefully) my PR is revised and merged
   issue_link: https://github.com/rust-lang/rust/issues/132802
 
-- title: The implications of copilot
-  description: AI coding agents and helpers, and how they impact developers
-
 - title: Implementing a allocator in Rust for my kernel
   description: Pretty self explanatory.
   note: Delayed due to cargo internal bug

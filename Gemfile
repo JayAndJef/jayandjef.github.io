@@ -34,6 +34,3 @@ gem "http_parser.rb", :platforms => [:jruby]
 
 gem "webrick"
 gem "jekyll-paginate"
-
-# Generate rss feed
-gem "jekyll-feed"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making an allocator for my kernel
-date: 2025-04-01 20:45:00 -0800
+date: 2025-04-01 19:45:00 -0800
 categories: locos programming
 ---
 

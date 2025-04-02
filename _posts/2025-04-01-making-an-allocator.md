@@ -151,3 +151,6 @@ To be honest, I'm not very clear on how we could fix this. I've seen implementat
 In the end, I decided to settle with this allocator for now. In the future, I might optimize it more or switch to a pre-made allocator, as making this was more for the knowledge itself.
 
 Thanks for reading, and if you have any improvements (either for the post or the allocator), shoot me a message on my discord `jayandjeff`.
+
+ERRATA:
+- I've realized that the generic const `N` is unneeded and is a remnant of development. It has been removed.

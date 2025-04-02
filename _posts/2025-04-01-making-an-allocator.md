@@ -5,7 +5,7 @@ date: 2025-04-01 18:45:00 -0800
 categories: locos programming
 ---
 
-The long awaited (at least by me) post... has finally come. ~Now, the obvious reason why this is on april fools day is because my kernel is a joke.~
+The long awaited (at least by me) post... has finally come. ~~Now, the obvious reason why this is on april fools day is because my kernel is a joke.~~
 
 It has taken this long because I have given up on waiting for cargo maintainers to fix the previous [issue](https://github.com/rust-lang/cargo/issues/10444) and have decided to just migrate my project into two separate crates.
 
@@ -28,7 +28,7 @@ While reading through his posts, I found that he gave a few different implementa
 
 A memory allocator is simple. You give it a block of memory (think of a long tape measure), and let it manage it when you later need memory of a specific size (think the width) and alignment (think "the start of this can only be placed at marks of a multiple of *X*"). It also handles freeing the memory ("hey allocator, I'm not gonna use this anymore, you can give it to some other caller") when you don't need it anymore.
 
-The interface for this in rust used by the `alloc` crate, which provides all the heap-allocated types including `Vec<T>` and `Box<T>`, is `[GlobalAlloc](https://doc.rust-lang.org/std/alloc/trait.GlobalAlloc.html)`. This means that a memory allocator must implement `alloc`, which returns a pointer to the memory they request, and `dealloc`, which frees it.
+The interface for this in rust used by the `alloc` crate, which provides all the heap-allocated types including `Vec<T>` and `Box<T>`, is [`GlobalAlloc`](https://doc.rust-lang.org/std/alloc/trait.GlobalAlloc.html). This means that a memory allocator must implement `alloc`, which returns a pointer to the memory they request, and `dealloc`, which frees it.
 
 There are many different ways to handle memory allocation. The simplest way is a [bump allocator](https://rust-hosted-langs.github.io/book/chapter-simple-bump.html), which gives out blocks of memory, one after the other. The drawback is that you can only allocate memory after the last block - also meaning that you can only truely free the entire block at once, leading to *memory fragmentation* as more and more space is wasted as blocks inside are unused.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: More kernel features - Migration to Limine
-date: 2025-04-01 18:45:00 -0800
+date: 2025-05-10 18:45:00 -0800
 categories: locos programming
 ---
 

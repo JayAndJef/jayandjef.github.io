@@ -46,9 +46,7 @@ locos/
 This didn't fit well with limine, however, as it itself isn't two separate rust crates. Moving most of the build, linking, and iso creation logic to `build.rs` and makefiles, I ended up with this directory structure:
 
 ```
-.
 locos/
-
 ├── Makefile
 ├── kernel/
 │   ├── .cargo/

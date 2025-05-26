@@ -65,7 +65,7 @@ fn mask_all_irqs() {
 
 ### The new APIC
 
-After this, the next step is to setup the [**APIC**](https://wiki.osdev.org/APIC) (**A**dvanced **P**rogrammable **I**terrupt **C**controller). The system is comprised of two separate structures - the (I/O apic)[https://wiki.osdev.org/IOAPIC], which routes external interrupts to cores, and the local apic (lapic) which handles them, alongside having a timer in itself.
+After this, the next step is to setup the [**APIC**](https://wiki.osdev.org/APIC) (**A**dvanced **P**rogrammable **I**nterrupt **C**ontroller). The system is comprised of two separate structures - the (I/O apic)[https://wiki.osdev.org/IOAPIC], which routes external interrupts to cores, and the local apic (lapic) which handles them, alongside having a timer in itself.
 
 There's also been multiple APIC standards, the most recent two being xapic (released 2000) and x2apic (released 2008) - the main differences are that x2apic bumps the lapic ID to 32 bits to support more cores, and also makes all the apic registers [MSR](https://wiki.osdev.org/Model_Specific_Registers)s (model specific registers, accessible through the `rdmsr` and `wrmsr` instructions) instead of [MMIO](https://en.wikipedia.org/wiki/Memory-mapped_I/O_and_port-mapped_I/O).
 

@@ -21,7 +21,7 @@ Fortunately, you won't need to decide between these two, because they both requi
 
 Hardware interrupts must all pass through some sort of interrupt controller that manages them and decides when to send them to your kernel. 
 
-In the olden days, this was done through the (**PIC**)[https://en.wikipedia.org/wiki/Programmable_interrupt_controller] (**P**rogrammable **I**nterrupt **C**ontroller). In fact, most modern systems start in the legacy PIC mode and are fully compatible with this protocol. 
+In the olden days, this was done through the [**PIC**](https://en.wikipedia.org/wiki/Programmable_interrupt_controller) (**P**rogrammable **I**nterrupt **C**ontroller). In fact, most modern systems start in the legacy PIC mode and are fully compatible with this protocol. 
 
 The PIC was two components that each mapped interrupts from hardware and channeled it to the cpu. The drawback of this, however, was that because each one only had 8 lines, there was a total of 15 (as one on the second, or the slave PIC, in the cascade was connected to the first one).
 

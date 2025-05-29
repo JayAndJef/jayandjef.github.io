@@ -1,4 +1,2 @@
-- title: Contributing to Rust
-  description: my first experience contributing to rust
-  note: will start writing after (hopefully) my PR is revised and merged
-  issue_link: https://github.com/rust-lang/rust/issues/132802
+- title: Rewriting allocators
+  description: Kernel allocators are going to be a buddy/slab allocator system.

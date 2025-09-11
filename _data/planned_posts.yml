@@ -1,2 +1,2 @@
-- title: Rewriting allocators
-  description: Kernel allocators are going to be a buddy/slab allocator system.
+- title: USB stack
+  description: pretty self explanatory
